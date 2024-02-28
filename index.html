@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Deimantas Damkus</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Deimantas Damkus</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/selfphoto.JPG" alt="Deimantas Damkus profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Deimantas Damkus</h1>
+        <p class="section__text__p2">Junior Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2"
+           onclick="window.open('./assets/Deimantas_Damkus_CV_ENG.pdf')">Download CV</button>
+
+           <button class="btn btn-color-1"
+           onclick="window.location.href='./#contact'">Contact</button>
+        </div>
+        <div class="socials-container">
+          <img src="./assets/linkedin.png" alt='My linked in profile' class="icon" onclick="location.href='https://www.linkedin.com/in/deimantas-damkus-167785280/'">
+          <img src="./assets/github.png" alt='My github in profile' class="icon" onclick="location.href='https://github.com/DeimantasD'">
+        </div>
+      </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/selfphoto2.jfif" alt="Profile picture" class="about-pic">
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon">
+            <h3>Experience</h3>
+            <p>I finished Javascript Full-Stack Course with a tutor. After that self-learning (projects, tutorials and etc.)</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Experience icon" class="icon">
+            <h3>Education</h3>
+            <p>Finished Javascript Full-Stack Course 492hr<br>I have a certificate </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>I tried myself in several work fields, then realized that I am most interested in IT. I decided to study at the Vilnius Coding School, and after completing the JavaScript Full-stack course, I have strengthened my desire to connect my future with IT. I am looking for a job/ internship as a programmer.  </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <h3>HTML</h3>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <h3>CSS</h3>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <h3>JAVASCRIPT</h3>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <h3>TypeScript</h3>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <h3>REACT JS</h3>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <h3>Node </h3>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <h3>Express JS</h3>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <h3>Git</h3>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>MongoDB</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+  </section>
+  <section id="projects">
+    <div class="projects-container">
+      <div class="project">
+        <img src="./assets/PROJECT_ONE.PNG" alt="Project 1">
+        <div class="project-content">
+            <p>HTML/CSS minimalistic project</p>
+            <div class="project-buttons">
+                <a href="https://melodious-griffin-decb04.netlify.app/" class="button">Live demo</a>
+                <a href="https://github.com/DeimantasD/HTML-CSS-project.git" class="button">GitHub</a>
+            </div>
+        </div>
+    </div>
+      <div class="project">
+        <img src="./assets/PROJECT_TWO.PNG" alt="Project 1">
+        <div class="project-content">
+            <p>React/ Typescript todo app</p>
+            <div class="project-buttons">
+                <a href="https://65df7ec5bc1b5450626a7a67--courageous-axolotl-913c61.netlify.app/" class="button">Live demo</a>
+                <a href="https://github.com/DeimantasD/react-typescript-simple-todo-app.git" class="button">GitHub</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="project">
+        <img src="./assets/PROJECT_THREE.PNG" alt="Project 2">
+        <div class="project-content">
+            <p> minimalist-ecommerce-REACT</p>
+            <div class="project-buttons">
+                <a href="https://astonishing-mooncake-55e6c4.netlify.app/" class="button">Live demo</a>
+                <a href="https://github.com/DeimantasD/minimalist-ecommerce-REACT.git" class="button">GitHub</a>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <img src="./assets/PROJECT_FOUR.PNG" alt="Project 3">
+        <div class="project-content">
+            <p>REACT-followFigma-BEMclassnaming</p>
+            <div class="project-buttons">
+                <a href="https://effervescent-dasik-1aa216.netlify.app/" class="button">Live demo</a>
+                <a href="https://github.com/DeimantasD/REACT-followFigma-BEMclassnaming.git" class="button">GitHub</a>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <img src="./assets/PROJECT_FIVE.PNG" alt="Project 4">
+        <div class="project-content">
+            <p>MERN project/ Carrent app</p>
+            <div class="project-buttons">
+                <a href="https://github.com/DeimantasD/Carrentapp-project.git" class="button">GitHub</a>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <img src="./assets/PROJECT_SIX.PNG" alt="Project 5">
+        <div class="project-content">
+            <p>MERN project- blog post app</p>
+            <div class="project-buttons">
+                <a href="https://github.com/DeimantasD/MERNproject-blog-website-simple.git" class="button">GitHub</a>
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+        <p><a href="mailto:deimantas.damkus@gmail.com">deimantas.damkus@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/deimantas-damkus-167785280/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Deimantas Damkus. All Rights Reserved.</p>
+  </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
