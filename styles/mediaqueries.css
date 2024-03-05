@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -12,6 +12,8 @@
   }
 
   
+
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -21,8 +23,8 @@
   #hamburger-nav {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
+  #skills,
+  .skills-details-container {
     margin-top: 2rem;
   }
   #profile,
@@ -56,7 +58,7 @@
   
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   #contact,
   footer {
     height: 40vh;
@@ -87,7 +89,7 @@
   .contact-info-container p a {
     font-size: 14px;
   }
-  .experience-sub-title {
+  .skills-sub-title {
     font-size: 1.25rem;
   }
   .logo {
@@ -112,6 +114,16 @@
   .text-container {
     text-align: justify;
   }
+  #contact .contact-info-container {
+
+  }
+
+  img.contact-icon {
+    height: 32px;
+    margin-left: 5px;
+  }
+  
+  
   
 }
 
@@ -123,5 +135,13 @@
   
   .project p {
     font-size: 12px;
+  }
+
+  #contact .contact-info-container p a {
+    font-size: 10px;
+  }
+
+  img.contact-icon {
+    height: 28px;
   }
 }

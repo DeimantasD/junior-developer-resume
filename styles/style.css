@@ -214,10 +214,10 @@ section {
 
 /* ===== ICONS ===== */
 
-.icon {
-  cursor: pointer;
-  height: 2rem;
-}
+ .icon {
+      cursor: pointer;
+      height: 2.5rem;
+    }
 
 /* ===== BUTTONS ===== */
 
@@ -327,20 +327,20 @@ section {
 .section__pic-container img {
   border-radius: 30px;
 }
-/* ===== EXPERIENCE SECTION ===== */
+/* ===== SKILLS SECTION ===== */
 
-#experience {
+#skills {
   position: relative;
 }
 
-.experience-sub-title {
+.skills-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
+.skills-details-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -350,18 +350,22 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
   flex-wrap: wrap;
-  flex-direction: column;
   gap: 2.5rem;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
 }
 
 article {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 10rem;
-  justify-content: flex-start;
-  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+img.icon {
+  height: 4rem;
 }
 
 article icon {
